@@ -70,16 +70,16 @@ def process_device_file(file):
     
     # Load the CSV data
     df = pd.read_csv(file)
-    
+    SystemName=df['System name'][0]
     # Convert timestamp and add seconds column
     df['Timestamp'] = pd.to_datetime(df['Timestamp'])
     df['secs'] = [(i * 5) for i in range(len(df))]
 
     # Plot the data for the current device
-    plot_cpu_utilisation(df, device_ip)
-    plot_avg_utilisation(df, 1, device_ip)
-    plot_avg_utilisation(df, 2, device_ip)
-    plot_memory_usage(df, device_ip)
+    plot_cpu_utilisation(df, SystemName )
+    plot_avg_utilisation(df, 1, SystemName)
+    plot_avg_utilisation(df, 2, SystemName)
+    plot_memory_usage(df, SystemName)
 
 # Find all CSV files with the format "device_info_{ipv4_addr}.csv"
 csv_files = glob.glob('device_info_*.csv')
