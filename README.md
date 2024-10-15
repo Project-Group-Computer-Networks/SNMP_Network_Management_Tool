@@ -31,10 +31,10 @@ This is a network management tool developed by our team Error_404 that uses **SN
 
 ## Usage
 ### For Manager
--All you need to do is run the snmpManager.py as follows in the terminal: python snmp_manager.py <device_ip_1> <name_1> <device_ip_2> <name_2> ...
--This will SET the System name of device with ip1 as name_1 and so on..
--All the data received from various devices is now found in device_info_<ip>.csv
--Later run the graph.py file and it will graphically depict all the data recieved from polled devices. 
+- All you need to do is run the snmpManager.py as follows in the terminal: python snmp_manager.py <device_ip_1> <name_1> <device_ip_2> <name_2> ...
+- This will SET the System name of device with ip1 as name_1 and so on..
+- All the data received from various devices is now found in device_info_<ip>.csv
+- Later run the graph.py file and it will graphically depict all the data recieved from polled devices. 
 
 ### For SNMP Trap Receiver
 - Simply run the trap_receiver.py file in the terminal. All the traps will be displayed in outputlog.txt.
