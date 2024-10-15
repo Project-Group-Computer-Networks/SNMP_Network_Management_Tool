@@ -26,13 +26,13 @@ This is a network management tool developed by our team Error_404 that uses **SN
 ## Installation
 - Clone this from Github
 - Follow this helpful article to setup a targeted device to allow remote managers to access its data: https://help.domotz.com/tips-tricks/how-to-enable-snmp-on-linux-machines/
-- Add the line view all included .1 in the snmpd.conf file
+- Add the line: <view all included .1> in the snmpd.conf file
 - Ensure that the snmpd.conf file of the targeted device has a line rwcommunity private <ip of manager> to give permission to the manager to access and set the device name.
 
 ## Usage
 ### For Manager
 -All you need to do is run the snmpManager.py as follows in the terminal: python snmp_manager.py <device_ip_1> <name_1> <device_ip_2> <name_2> ...
-  This will SET the System name of device with ip1 as name_1 and so on..
+-This will SET the System name of device with ip1 as name_1 and so on..
 -All the data received from various devices is now found in device_info_<ip>.csv
 -Later run the graph.py file and it will graphically depict all the data recieved from polled devices. 
 
