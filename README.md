@@ -1,18 +1,15 @@
 # CSN-341 : Mini-Project - Group 6
 
 # Network Management Tool with SNMP
-
 This is a network management tool developed by our team Error_404 that uses **SNMP (Simple Network Management Protocol)** to monitor various devices present in the network.It offers an efficient way to track and manage device performance, real-time status, and alerts in network environments like data centers, office setups, and more.
 
 ## Features
-
 - Device Status Tracking
 - Receiving Real-Time Alerts
 - Assessing Performance Metrics
 - Ability to Send SNMP traps
 
 ## Tech Stack
-
 - Python for SNMP communication and data processing.
 - matplotlib for data visualization.
 
@@ -40,7 +37,8 @@ This is a network management tool developed by our team Error_404 that uses **SN
 ### For SNMP Trap Receiver
 - Simply run the trap_receiver.py file in the terminal. All the traps will be displayed in outputlog.txt.
 
-## Video Demo(to change)
+## Video Demo
+https://drive.google.com/drive/folders/1lh0WiqRY5SG5V4m_qif-NboesbwOJbHz
 
 ## Made with ❤️ by Error_404
 
